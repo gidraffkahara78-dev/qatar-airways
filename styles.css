@@ -1,0 +1,75 @@
+/**
+ * Basic Reset
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #004b87; /* Qatar Airways theme color */
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Main Content */
+header, .main-content, footer {
+    padding: 20px;
+}
+
+.header {
+    background: url('airplane-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px; /* Example height */
+}
+
+/* Airplane Images */
+.airplane {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .header {
+        height: 200px; /* Adjust header height for small screens */
+    }
+}  
