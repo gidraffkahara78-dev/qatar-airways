@@ -8,33 +8,53 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Qatar Airways</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flights">Flights</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Qatar Airways</h1>
+            <p>Experience luxury travel like never before.</p>
+        </div>
     </header>
     <main>
-        <section class="hero">
-            <img src="plane.jpg" alt="Plane Image" />
-        </section>
-        <section class="booking">
-            <h2>Book Your Flight</h2>
-            <form action="/submit-booking" method="POST">
-                <label for="departure">Departure:</label>
-                <input type="text" id="departure" name="departure" required>
-                <label for="destination">Destination:</label>
-                <input type="text" id="destination" name="destination" required>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-                <button type="submit">Book Now</button>
+        <section id="flight-search">
+            <h2>Search Flights</h2>
+            <form>
+                <input type="text" placeholder="From" required>
+                <input type="text" placeholder="To" required>
+                <input type="date" placeholder="Departure Date" required>
+                <input type="date" placeholder="Return Date">
+                <button type="submit">Search</button>
             </form>
         </section>
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>For assistance, reach out via:</p>
-            <p>Email: <a href="mailto:bookingcallingassistance@gmail.com">bookingcallingassistance@gmail.com</a></p>
-            <p>WhatsApp: <a href="https://wa.me/447828744790">+44 7828 744790</a></p>
+        <section id="destinations">
+            <h2>Featured Destinations</h2>
+            <ul>
+                <li>Doha</li>
+                <li>New York</li>
+                <li>London</li>
+                <li>Paris</li>
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                <p>"Best airline ever!" - Jane Doe</p>
+            </blockquote>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Qatar Airways</p>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@qatarairways.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </section>
     </footer>
 </body>
 </html>
