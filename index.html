@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qatar Airways</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Qatar Airways</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="plane.jpg" alt="Plane Image" />
+        </section>
+        <section class="booking">
+            <h2>Book Your Flight</h2>
+            <form action="/submit-booking" method="POST">
+                <label for="departure">Departure:</label>
+                <input type="text" id="departure" name="departure" required>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>For assistance, reach out via:</p>
+            <p>Email: <a href="mailto:bookingcallingassistance@gmail.com">bookingcallingassistance@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/447828744790">+44 7828 744790</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Qatar Airways</p>
+    </footer>
+</body>
+</html>
