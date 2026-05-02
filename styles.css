@@ -1,75 +1,53 @@
-/**
- * Basic Reset
- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.header {
+    background-color: #8B0000;
+    color: #FFD700;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Body and Fonts */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #004b87; /* Qatar Airways theme color */
-    padding: 15px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: white;
+.header a {
+    color: #FFD700;
     text-decoration: none;
+    margin: 0 15px;
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-/* Main Content */
-header, .main-content, footer {
+.flight-search {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-.header {
-    background: url('airplane-image.jpg') no-repeat center center;
-    background-size: cover;
-    height: 400px; /* Example height */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-style: italic;
 }
 
-/* Airplane Images */
-.airplane {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .header {
-        height: 200px; /* Adjust header height for small screens */
+        flex-direction: column;
     }
-}  
+    .flight-search {
+        flex-direction: column;
+    }
+}
